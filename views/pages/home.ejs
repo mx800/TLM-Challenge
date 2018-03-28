@@ -1,0 +1,111 @@
+<% include header %>
+
+    <body>
+        <div class="preloader">
+            <div class="loading">
+                <h2>
+                    Loading...
+                </h2>
+                <span class="progress"></span>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <ul class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" id="scene">
+                <li class="layer" data-depth="0.00">
+                </li>
+                <!-- BG -->
+
+                <li class="layer" data-depth="0.10">
+                    <div class="background">
+                    </div>
+                </li>
+
+                <!-- Hero -->
+
+                <li class="layer" data-depth="0.20">
+                    <div class="title">
+                        <h2>
+                            TLM Challenge
+                        </h2>
+                        <span class="line"></span>
+                    </div>
+                </li>
+                <li class="layer" >
+                    <div class="hero">
+                        <a href="/test"><input  type="button" value="test" ></a>
+
+                        <p class="sub-title" data-depth="0.30">
+                            Des noms comme vous en avez jamais vue!
+                        </p>
+                    </div>
+                </li>
+                <!-- Flakes -->
+
+                <li class="layer" data-depth="0.40">
+                    <div class="depth-1 flake1">
+                        <img alt="flake" src="/asset/images/suriken.gif">
+                    </div>
+
+                    <div class="depth-1 flake2">
+                        <img alt="flake" src="/asset/images/suriken.gif">
+                    </div>
+
+                    <div class="depth-1 flake3">
+                        <img alt="flake" src="/asset/images/suriken.gif">
+                    </div>
+
+                    <div class="depth-1 flake4">
+                        <img alt="flake" src="/asset/images/suriken.gif">
+                    </div>
+                </li>
+
+                <li class="layer" data-depth="0.50">
+                    <div class="depth-2 flake1">
+                        <img alt="flake" src="/asset/images/suriken.gif">
+                    </div>
+
+                    <div class="depth-2 flake2">
+                        <img alt="flake" src="/asset/images/suriken.gif">
+                    </div>
+                </li>
+
+                <li class="layer" data-depth="0.60">
+                    <div class="depth-3 flake1">
+                        <img alt="flake" src="/asset/images/suriken.gif">
+                    </div>
+
+                    <div class="depth-3 flake2">
+                        <img alt="flake" src="/asset/images/suriken.gif">
+                    </div>
+
+                    <div class="depth-3 flake3">
+                        <img alt="flake" src="/asset/images/suriken.gif">
+                    </div>
+
+                    <div class="depth-3 flake4">
+                        <img alt="flake" src="/asset/images/suriken.gif">
+                    </div>
+                </li>
+
+                <li class="layer" data-depth="0.80">
+                    <div class="depth-4">
+                        <img alt="flake" src="/asset/images/flakes/depth4/flakes.png">
+                    </div>
+                </li>
+
+                <li class="layer" data-depth="1.00">
+                    <div class="depth-5">
+                        <img alt="flake" src="/asset/images/flakes/depth5/flakes.png">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Javascript -->
+        <script src="/asset/js/plugins.js"></script>
+        <script src="/asset/js/jquery.countdown.min.js"></script>
+        <script src="/asset/js/main.js"></script>
+
+
+<% include footer %>
