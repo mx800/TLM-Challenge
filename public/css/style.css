@@ -1036,3 +1036,12 @@ h2 {
 		padding: 25px 45px;
 	}
 }
+
+#margin{
+	margin-top: 50px;
+}
+
+.hoverMenu:hover{
+	opacity: 0.7;
+	transform: scale(1.1);
+}
