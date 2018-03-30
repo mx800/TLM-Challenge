@@ -5,9 +5,9 @@
             <h1 class="ui inverted header"  id="margin" style="font-family: Arial">
                 Choisissez  votre  nom  de  Ninja!
             </h1>
-            <form action="/ninjify" method="GET" class="ui form">
+
                 <div class="ui container" id="margin">
-                    <select name="x" id="gender-select" class="ui multiple selection dropdown">
+                    <select  id="gender-select" class="ui multiple selection dropdown">
                         <option value=""></option>
                         <% for(let i=0; i< buzzwordGroups.length;i++ ) { %>
                             <option value="<%= buzzwordGroups[i].buzzword %>"><%= buzzwordGroups[i].buzzword %></option>
@@ -20,7 +20,7 @@
                 <button type="submit" class="ui huge primary button continuer"  id="margin">
                     Continuer<i class="right arrow icon"></i>
                 </button>
-            </form>
+
     </div>
     </div>
 
