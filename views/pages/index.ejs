@@ -5,14 +5,13 @@
             <h1 class="ui inverted header"  id="margin" style="font-family: Arial">
                 Choisissez  votre  nom  de  Ninja!
             </h1>
-            <form action="/" method="post" class="ui form">
+            <form action="/ninjify" method="GET" class="ui form">
                 <div class="ui container" id="margin">
-                    <select name="gender" id="gender-select" class="ui multiple selection dropdown">
+                    <select name="x" id="gender-select" class="ui multiple selection dropdown">
                         <option value=""></option>
-                        <option value="C++">C++</option>
-                        <option value="F++">F++</option>
-                        <option value="PHP">PHP</option>
-                        <option value=".Net">.Net</option>
+                        <% for(let i=0; i< buzzwordGroups.length;i++ ) { %>
+                            <option value="<%= buzzwordGroups[i].buzzword %>"><%= buzzwordGroups[i].buzzword %></option>
+                        <% } %>
                     </select>
                     <div class="ui button vider">
                         Vider
